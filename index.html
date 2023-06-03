@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <main>
+        <section id="date-container" class="box-design" >
+            <p id="date"></p>
+        </section>
+
+        <section id="clock-container" class="show">
+            <h1>Digital Clock</h1>
+    
+            <section id="clock" class="box-design">
+                <div id="hour" class="clock-section"></div>
+                <span>:</span>
+                <div id="mins" class="clock-section"></div>
+                <span>:</span>
+                <div id="secs" class="clock-section"></div>
+                <div id="am-pm" class="clock-section"></div>
+            </section>
+        </section>
+
+
+        <section id="timer-container">
+
+            <h1>Timer</h1>
+
+            <div id="alert" class="box-design" ></div>
+
+            <div id="timer" class="box-design">
+                <div id="remaining-hours" class="timer-section">00</div>
+                <span>:</span>
+                <div id="remaining-mins" class="timer-section">00</div>
+                <span>:</span>
+                <div id="remaining-secs" class="timer-section">00</div>
+
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+
+            <div id="timer-input-container" class="box-design">
+                <div class="input-label-container">
+                    <input type="text" id="inputed-hours" class="timer-input"  maxlength="2">
+                    <label for="inputed-hours"> Hours</label>
+                </div>
+                <div class="input-label-container">
+                    <input type="text" id="inputed-mins" class="timer-input"  maxlength="2">
+                    <label for="inputed-mins"> Minutes</label>
+                </div>
+                <div class="input-label-container">
+                    <input type="text" id="inputed-secs" class="timer-input" maxlength="2">
+                    <label for="inputed-secs">Seconds<label>
+                </div>
+
+                <button type="submit" class="box-design timer-btn" id="set-timer-btn">
+                    set timer
+                </button>
+                <button type="button" class="box-design timer-btn" id="end-timer-btn">
+                    end timer
+                </button>
+            </div>
+        </section>
+
+        <button id="go-to-button" class="box-design">
+            Go to timer
+        </button>
+            
+
+
+
+        
+        
+
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
